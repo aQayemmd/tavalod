@@ -401,7 +401,21 @@
   }
 
   @media (prefers-reduced-motion: reduce){
-    *{animation:none !important; transition:none !important;}
+    *{
+      animation-duration:0.01ms !important;
+      animation-delay:0s !important;
+      animation-iteration-count:1 !important;
+      transition-duration:0.01ms !important;
+    }
+    .reveal-word, .eyebrow-hero, .hero-sub, .scrollcue,
+    .letter-title, .letter p, .divider,
+    .photo-frame, .photo-caption,
+    .wish-title, .wish p,
+    .seal, .tap-hint, .seal-caption,
+    .moon-img, .moon-caption, .moon-sub,
+    .song-eyebrow, .song-card{
+      opacity:1 !important; transform:none !important;
+    }
   }
 
   /* ================= MOON ================= */
